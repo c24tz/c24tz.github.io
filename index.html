@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
 	<title>Theo's Website</title>
 	<style type="text/css">
 		#menu{
@@ -10,12 +12,32 @@
 			border:3px solid black;
 			
 		}
+
+
+.item{
+width:32%;
+height:25px;
+position:relative;
+display:inline-block;
+font-family: 'Roboto Slab', serif;
+text-align:center;
+font-size:30px;
+
+
+
+}
+a{text-decoration:none;
+color:black;
+}
+
+
+
 	</style>
 </head>
 <body>
    <div id="menu">
-   	<div class="item">Projects</div>
-   	<div class="item">Journal</div>
+   	<a href="project.html"><div class="item">Projects</div></a>
+   	<a href="journal.html"><div class="item">Journal</div></a>
    	<div class="item">About Me</div>
    </div> 
 
