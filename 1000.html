@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		.waffles{
+			width:100px;
+			height:100px;
+			background-image:url(https://i.pinimg.com/originals/0d/5c/98/0d5c98c686e322b58611c7568dcaf0ab.gif);
+			background-size:contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+		}
+
+		body {
+			background-image:url(https://www.pixelstalk.net/wp-content/uploads/images4/Underwater-Background-HD-1.jpg);
+		}
+	</style>
+</head>
+<body>
+
+
+
+
+<script type="text/javascript">
+
+
+
+//this is a function that makes a waffle div, puts it into the BODY of the html document AND it gives the div the class of waffles.
+
+    function makeWaffles(input) {
+        var waffle = document.createElement("div"); //this line creates a variable called waffle and points it to a HTML element that's a div (aka <div></div>)
+
+        document.body.appendChild(waffle); //append means "add" and child means something inside something else. this is saying put the div in the body. 
+
+
+        waffle.classList.add('waffles'); // this adds the class "waffles" to each div.
+
+        waffle.innerText = input;
+
+
+    }
+
+for (var counter = 0; counter<1000; counter=counter+1) {makeWaffles(counter);}
+
+
+  
+    </script>
+</body>
+
+</html>

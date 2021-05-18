@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#daniel{
+			width:100px;
+			height:200px;
+			background-color:blue;
+		}
+	</style>
+</head>
+<body>
+
+
+<div id="daniel"></div>
+
+	<audio id="song" src="2.mp3"></audio>
+
+<script type="text/javascript">
+	
+
+	var box = document.getElementById("daniel");
+
+
+var song = document.getElementById("song");
+
+//add 1 each time you click to something (array or variable)//
+
+var apples =0;
+
+box.addEventListener("click", function(){
+apples = apples + 1;
+console.log(apples)
+
+
+
+if(apples%2 == 1) {
+	box.style.backgroundColor ="red";
+	song.play();}
+
+else if (apples%2 ==0) {
+	box.style.backgroundColor ="blue";
+	song.pause();
+}
+})
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

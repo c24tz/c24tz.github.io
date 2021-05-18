@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#pizza{
+			width:300px;
+			height:300px;
+		
+			background-size:contain;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+
+	<center>
+
+		<h1>What pizza are you, Alec?</h1>
+		
+		<div id="pizza">
+			
+		</div>
+	</center>
+
+	<script type="text/javascript">
+
+	
+
+		var images = ["url(https://www.pngkey.com/png/full/169-1694345_cheese-pizza-pie-png.png)", 
+
+		"url(https://www.freeiconspng.com/uploads/pizza-png-27.png)", 
+
+		"url(https://mellowmushroom.com/wp-content/themes/mm/images/menu-pizza1.png)", 
+
+		"url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3qc-MDOkvlgHCmFMPeXQoWl2ejB62rgzu1VeZe6nH0Zj5hOHoE3NVcrZ9Mnw7kf0YmT4&usqp=CAU)", 
+]var box = document.getElementById('pizza');
+
+		box.addEventListener("click", function(){
+
+			var coin = Math.floor(Math.random()*4);
+
+			console.log(cores[pig])
+
+			box.style.backgroundImage = images[coin];
+
+
+
+		})
+
+
+	</script>
+
+</body>
+</html>

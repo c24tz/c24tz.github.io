@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#pitch{
+			width:800px;
+			height:500px;
+			position: relative;
+			background-size:contain;
+			background-repeat: no-repeat;
+			text-align: center;
+		}
+
+		#description{
+			font-size: 42px;
+			width: 100px;
+			height: 100px;
+			background-color: white;
+			left: 800;
+			right: 800;
+			text-align: center;
+		
+				}
+	</style>
+</head>
+<body>
+
+	<center>
+
+		<h1>Click to see a random optical illusion</h1>
+		
+		
+		<div id="pitch"></div>
+		<div id="description"></div>
+	</center>
+
+	<script type="text/javascript">
+
+		
+
+
+
+
+		
+
+		var ball = ["url(https://funsprout.com/wp-content/uploads/2016/12/trippy-moving-background-18.jpg)", "Changeup", "Curveball", "Slider", "Cutter", "Sinker", "Knuckleball"]
+
+		var strike = ["https://funsprout.com/wp-content/uploads/2016/12/trippy-moving-background-18.jpg", 
+
+		"url(changeup.gif)", 
+
+		"url(curveball.gif)", 
+
+		"url(slider.gif)", 
+
+		"url(cutter.gif)",
+
+		"url(sinker.gif)",
+
+		"url(knuckleball.gif)"
+		]
+		
+		var description = document.getElementById('description');
+		
+		var box = document.getElementById('pitch');
+
+		box.addEventListener("click", function(){
+
+		var pig = Math.floor(Math.random()*7);
+		
+
+		console.log(ball[pig])
+
+		box.style.backgroundImage = strike[pig];
+		description.innerText = ball[pig];
+		
+
+
+			//box.style.backgroundColor = ball[pig];
+		box.style.backgroundColor = "white";
+
+
+		})
+		pitch.style.backgroundImage = "url(baseball.png)"
+
+
+	
+		
+		
+		
+
+
+		
+
+
+	</script>
+
+</body>
+</html>
